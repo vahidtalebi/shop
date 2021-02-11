@@ -123,5 +123,11 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+EDIA_URL = '/images/'
 
-MEDIA_ROOT = os.path.join(BASE_DIR, 'Items/itemimages')
+STATICFILES_DIR =[
+    BASE_DIR / 'static'
+]
+
+MEDIA_ROOT = BASE_DIR / 'static/images'
+STATIC_ROOT = BASE_DIR / 'staticfiles'
